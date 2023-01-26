@@ -18,8 +18,18 @@ public class StatusController {
         return statusService.getMessageCircle();
     }
 
+    @GetMapping("squareArea")
+    public double getSquareCircle() {
+        return statusService.getMessageSquare();
+    }
+
     @PutMapping("circleVal")
     public void setMessagecircleVal(@RequestParam double circleVal) {
         statusService.setMessageInch(circleVal);
+    }
+
+    @PutMapping("squareVal")
+    public void setMessageSquareVal(@RequestParam double squareVal) {
+        statusService.setMessageInch(squareVal);
     }
 }
