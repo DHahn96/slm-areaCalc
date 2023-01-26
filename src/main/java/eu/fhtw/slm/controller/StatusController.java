@@ -25,11 +25,11 @@ public class StatusController {
 
     @PutMapping("circleVal")
     public void setMessagecircleVal(@RequestParam double circleVal) {
-        statusService.setMessageInch(circleVal);
+        statusService.setMessagecircleVal(circleVal);
     }
 
     @PutMapping("squareVal")
     public void setMessageSquareVal(@RequestParam double squareVal) {
-        statusService.setMessageInch(squareVal);
+        statusService.setMessageSquareVal(squareVal);
     }
 }
