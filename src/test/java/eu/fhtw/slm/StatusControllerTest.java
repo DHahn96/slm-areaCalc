@@ -31,10 +31,10 @@ public class StatusControllerTest {
         final double messageResponseCircle = testRestTemplate.getForObject("http://localhost:" + port + "/message", double.class);
         assertEquals(messageCircle*3.1415, messageResponseCircle);
 
-        final double messageSqare = 100.00;
-        statusService.setMessageSquareVal(messageSqare);
+        final double messageSquare = 100.00;
+        statusService.setMessageSquareVal(messageSquare);
         final double messageResponseSquare = testRestTemplate.getForObject("http://localhost:" + port + "/message", double.class);
-        assertEquals(messageSqare*messageSqare, messageResponseSquare);
+        assertEquals(messageSquare*messageSquare, messageResponseSquare);
     }
 
 }
